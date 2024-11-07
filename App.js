@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
-import BirthdayCard from './components/Birthday';
+import BirthdayCardApp from './components/Birthday';
 
 const theme = {
   colors: {
@@ -18,7 +18,7 @@ export default function App() {
     <PaperProvider theme={theme}>
       <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.background }}>
         <StatusBar barStyle="dark-content" backgroundColor={theme.colors.background} />
-        <BirthdayCard />
+        <BirthdayCardApp />
       </SafeAreaView>
     </PaperProvider>
   );
