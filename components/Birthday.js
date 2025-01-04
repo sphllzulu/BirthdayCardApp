@@ -9,7 +9,8 @@ import {
   Modal,
   FlatList,
   Dimensions,
-  Animated
+  Animated,
+  Platform,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -301,25 +302,41 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5F5F5',
     padding: 16,
   },
+  headerContainer: {
+    paddingTop: Platform.OS === 'ios' ? 50 : 20,
+    paddingHorizontal: 16,
+    paddingBottom: 16,
+    backgroundColor: '#FF1493',
+  },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 12,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'hotpink',
+    marginBottom:10,
   },
   createButton: {
-    backgroundColor: '#FF1493',
-    padding: 10,
-    borderRadius: 8,
+    backgroundColor: 'white',
+    padding: 12,
+    borderRadius: 25,
+    alignItems: 'center',
+    marginHorizontal: 20,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   createButtonText: {
-    color: 'white',
+    color: '#FF1493',
     fontWeight: 'bold',
+    fontSize: 16,
   },
   createForm: {
     flex: 1,
