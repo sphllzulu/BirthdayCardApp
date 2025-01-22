@@ -4,10 +4,10 @@
     "slug": "BirthdayCardApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/happy.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/happy.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,15 +16,27 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/happy.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sphllzulu.BirthdayCardApp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/happy.jpg"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f1b14594-62f9-4482-a380-981f2c373db0"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f1b14594-62f9-4482-a380-981f2c373db0"
+    }
   }
 }
