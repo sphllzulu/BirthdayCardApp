@@ -12,6 +12,10 @@ A React Native mobile application that allows users to create, save, and manage 
 - Delete unwanted cards
 - Persistent storage using AsyncStorage
 
+## Screenshot
+![Image](https://github.com/user-attachments/assets/08f97c48-e1e4-48bd-9fc4-fe1151169473)
+
+
 ## 🛠 Prerequisites
 
 Before you begin, ensure you have installed:
@@ -125,15 +129,6 @@ The app uses React Native's StyleSheet for styling. Modify the `styles` object i
 
 - Template modal may need adjustment on smaller screens
 - Decoration animations might affect performance on older devices
-
-## 📱 Compatibility
-
-- iOS: 11.0 or later
-- Android: API 21 (Android 5.0) or later
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details
 
 ## 👥 Authors
 
